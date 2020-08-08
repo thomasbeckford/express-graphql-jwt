@@ -1,0 +1,29 @@
+type User {
+	id: ID
+	first_name: String
+	last_name: String
+	preferred_name: String
+	phone: String
+	email: String
+	password: String
+	salt: String
+	token: String
+}
+
+input UserMainRequest {
+	id: ID
+	first_name: String
+	last_name: String
+	preferred_name: String
+	phone: String
+	email: String
+	password: String
+	salt: String
+	token: String
+}
+type UserMainResponse {
+	user: User
+	message: String
+	accessToken: String
+	refreshToken: String
+}
